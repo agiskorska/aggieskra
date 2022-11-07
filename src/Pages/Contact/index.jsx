@@ -1,11 +1,11 @@
 import styles from './index.module.css'
 
-import {Button} from '../../common'
+import {Button, ContactForm} from '../../common'
 
 function Contact() {
   return (
-    <div>Contact
-      <Button text='Contact' />
+    <div>
+      <ContactForm />
     </div>
   )
 }
