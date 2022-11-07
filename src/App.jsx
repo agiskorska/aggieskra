@@ -2,11 +2,16 @@ import {Routes, Route} from 'react-router-dom'
 
 import './App.css'
 import {Home} from './Pages'
+import {MainLayout} from './Layouts'
 function App() {
 
   return (
     <div className="App">
-      <Home ></Home>
+      <Routes>
+        <Route path={'/'} element={<MainLayout/>}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
     </div>
   )
 }
