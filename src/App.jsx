@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route path={'/'} element={<MainLayout/>}>
           <Route index element={<Home />} />
-          <Route index element={<Contact />} />
-          <Route index element={<About />} />
+          <Route path={'contact'} element={<Contact />} />
+          <Route path={'about'} element={<About />} />
         </Route>
       </Routes>
     </div>
