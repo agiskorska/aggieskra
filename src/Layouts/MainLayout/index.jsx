@@ -1,10 +1,14 @@
 import { Outlet } from 'react-router-dom'
-
 import styles from './index.module.css'
+import {NavBar, Footer} from '../../common'
 
 function Home() {
   return (
-    <div><Outlet /></div>
+    <>
+      <NavBar />
+      <Outlet />
+      <Footer />
+    </>
   )
 }
 
