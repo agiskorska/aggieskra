@@ -1,0 +1,35 @@
+.dark, .light {
+    margin: auto;
+    height: fit-content;
+    border-radius: 35px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 25px;
+    max-width: fit-content;
+    z-index: 5;
+}
+
+.dark {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+}
+
+.light {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid rgb(244, 243, 243);
+    color: rgb(243, 243, 243);
+    border: 2px solid white;
+}
+
+.dark:hover{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.light:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}

@@ -3,7 +3,8 @@
   min-width: 100vw;
   max-height: 100vh;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
 }
