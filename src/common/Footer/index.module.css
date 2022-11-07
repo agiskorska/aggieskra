@@ -1,0 +1,136 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav, .registry {
+    flex-basis: 80%;
+}
+
+.socialMed{
+    flex-basis: 100%;
+    /* outline: 1px solid black; */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.socialMed p {
+    font-size: 20px;
+    padding: 0;
+}
+
+.sponsors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sponsorImg{
+    width: 50vw;
+    padding-top: 60px;
+}
+
+.qr {
+    /* width: 100%; */
+    /* text-align: center; */
+    text-align: end;
+
+}
+
+.donate{
+    text-align: center;
+}
+
+.qr img {
+    width: 100px;
+}
+
+.nav {
+    display:flex;
+    flex-direction: column;
+}
+
+.root{
+    width: 100wv;
+    border-top: 1px solid rgba(172, 208, 253, 0.29);
+    /* background-color: rgb(255, 255, 255); */
+    padding: 0 40px;
+}
+
+.root >*, .nav >*{
+    width: 100%;
+    font-size: 14px;
+    color: black;
+    font-family: 'Poppins';
+    line-height: 30px;
+}
+
+.media {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.media a {
+    padding: 0 10px;
+}
+
+.media a img {
+    width: 40px;
+}
+
+.registry {
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.rights {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+@media (min-width: 1000px) {
+
+    .media{
+        margin-top: 20px;
+    }
+
+    .sponsors, .content{
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+        
+    .sponsorImg{
+        width: 20vw;
+        padding-top: 0;
+
+    }
+
+    .socialMed{
+        text-align: center;
+    }
+
+    .nav, .registry, .socialMed{
+        /* outline: 1px black solid; */
+        flex-basis: 33%;
+        flex-wrap: nowrap;
+    }
+
+    .registry{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 0;
+        /* flex-direction: column;
+        align-items: flex-end; */
+    }
+}

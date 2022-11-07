@@ -1,7 +1,12 @@
 import styles from './index.module.css'
+
+import {Button} from '../../common'
+
 function {{name}}() {
   return (
-    <div className={styles.root}>{{name}}</div>
+    <div>{{name}}
+      <Button text='{{name}}' />
+    </div>
   )
 }
 
