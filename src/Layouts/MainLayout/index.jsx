@@ -4,11 +4,13 @@ import {Footer, Header} from '../../common'
 
 function Home() {
   return (
-    <>
+    <div className={styles.root}>
       <Header />
-      <Outlet />
+      <div className={styles.outletWrapper}>
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
