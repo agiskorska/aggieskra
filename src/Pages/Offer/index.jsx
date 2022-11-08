@@ -10,11 +10,11 @@ function Offer() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam porro quas reprehenderit ipsa tempora asperiores praesentium placeat illum sunt?</p>
       </Card>
       <Card>
-        <Heading>Offer 1 </Heading>
+        <Heading>Offer 2 </Heading>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam porro quas reprehenderit ipsa tempora asperiores praesentium placeat illum sunt?</p>
       </Card>
       <Card>
-        <Heading>Offer 1 </Heading>
+        <Heading>Offer 3 </Heading>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam porro quas reprehenderit ipsa tempora asperiores praesentium placeat illum sunt?</p>
       </Card>
     </CardsContainer>
