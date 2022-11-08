@@ -3,13 +3,6 @@ import React, { useState, useRef, useEffect } from 'react'
 import logo from '../../assets/logo.png'
 import styles from './index.module.css'
 
-const enterStart = {
-    height: '50vh',   
-} 
-const enterEnd = {
-    height: '10vh',   
-} 
-
 function Navbar() {
   const [height, setHeight] = useState('50vh')
   useEffect(() => {
