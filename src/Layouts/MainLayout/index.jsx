@@ -6,9 +6,9 @@ function Home() {
   return (
     <div className={styles.root}>
       <Header />
-      <div className={styles.outletWrapper}>
+      <main className={styles.outletWrapper}>
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   )
