@@ -5,6 +5,7 @@ import {Footer, Header} from '../../common'
 function Home() {
   return (
     <div className={styles.root}>
+      <div className={styles.zigzag}></div>
       <Header />
       <main className={styles.outletWrapper}>
         <Outlet />
