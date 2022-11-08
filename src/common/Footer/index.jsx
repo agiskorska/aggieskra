@@ -5,7 +5,7 @@ function Footer() {
   useEffect(() => {
     const timer = setTimeout(()=> {
         console.log('changing height')
-        setHeight('10vh')
+        setHeight('20vh')
     }, 1500)
     
   }, [])
