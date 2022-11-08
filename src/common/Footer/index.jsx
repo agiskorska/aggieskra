@@ -11,7 +11,7 @@ function Footer() {
   }, [])
   return (
     <footer className={styles.root} style={{height: height, transition: 'all 1.5s'}}>
-      <p className={styles.p}>Website Developer</p>
+      <p className={styles.p}>Website Design & Development</p>
     </footer>
   )
 }

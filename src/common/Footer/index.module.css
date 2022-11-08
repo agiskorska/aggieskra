@@ -6,3 +6,9 @@
     background-color: black;
     transition: 1.5s all;
 }
+
+
+.p{
+    padding-top: 15px;
+    font-size: 25px;
+}
