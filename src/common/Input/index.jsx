@@ -7,7 +7,7 @@ function Input({type, name, defaultValue, handleClick, children}) {
     setValue(e.target.value)
   }
   return (
-    <label className={styles.root}>{children}
+    <label className={styles.root}><p>{children}</p>
       {type !== 'textarea' ? 
         <input className={styles.input} type={type} value={value} onChange={handleChange} onClick={handleClick} name={name}/> :
         <textarea className={styles.textarea}></textarea>
