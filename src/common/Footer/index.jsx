@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import styles from './index.module.css'
 function Footer() {
-  const [height, setHeight] = useState('50vh')
+  const [height, setHeight] = useState('56vh')
   useEffect(() => {
     const timer = setTimeout(()=> {
         console.log('changing height')
