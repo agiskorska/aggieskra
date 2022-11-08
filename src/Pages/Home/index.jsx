@@ -1,10 +1,9 @@
 import styles from './index.module.css'
 
-import {ArticleSection, Button, Container, Heading} from '../../common'
-
 function Home() {
   return (
     <div>
+      home
     </div>
   )
 }

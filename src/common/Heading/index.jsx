@@ -1,7 +1,7 @@
 import styles from './index.module.css'
-function Heading({children}) {
+function Heading({children, variant}) {
   return (
-    <h1 className={styles.root}>{children}</h1>
+    <h1 className={variant ? styles[variant] : styles.root}>{children}</h1>
   )
 }
 
