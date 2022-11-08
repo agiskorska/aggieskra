@@ -1,7 +1,7 @@
 import {Routes, Route} from 'react-router-dom'
 
 import './App.css'
-import {About, Contact, Home} from './pages'
+import {About, Contact, Home, Offer} from './pages'
 import {MainLayout} from './layouts'
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path={'contact'} element={<Contact />} />
           <Route path={'about'} element={<About />} />
+          <Route path={'offer'} element={<Offer />} />
         </Route>
       </Routes>
     </div>
