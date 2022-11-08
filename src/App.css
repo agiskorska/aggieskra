@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'JuliusSansOne';
   src: url('./assets/fonts/JuliusSansOne-Regular.ttf');
+  background-color: rgb(36,36,36);
 }
 body >* {
   font-family: 'JuliusSansOne';
+  color: white;
 }
 
 #root {
