@@ -1,9 +1,8 @@
 .root{
-    position: absolute;
+    position: sticky;
     width: 100%;
     bottom: 0;
     left: 0;
     background-color: black;
-
     transition: 1.5s all;
 }
