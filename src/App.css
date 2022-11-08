@@ -5,6 +5,7 @@
 body >* {
   font-family: 'JuliusSansOne';
 }
+
 #root {
   max-width: 100vw;
   min-height: 100vh;
