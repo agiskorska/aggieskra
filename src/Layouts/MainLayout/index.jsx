@@ -5,7 +5,8 @@ import {Footer, Header} from '../../common'
 function Home() {
   return (
     <div className={styles.root}>
-      <div className={styles.zigzag}></div>
+      {/* TODO come up with how to bring the zigzag without disabling navbar */}
+      {/* <div className={styles.zigzag}></div> */}
       <Header />
       <main className={styles.outletWrapper}>
         <Outlet />
