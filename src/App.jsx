@@ -1,8 +1,8 @@
 import {Routes, Route} from 'react-router-dom'
 
 import './App.css'
-import {About, Contact, Home, Offer} from './pages'
-import {MainLayout} from './layouts'
+import {About, Contact, Home, Offer} from './Pages'
+import {MainLayout} from './Layouts'
 function App() {
 
   return (
