@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'JuliusSansOne';
-  src: url('./assets/fonts/JuliusSansOne-Regular.ttf');
-  background-color: rgb(36,36,36);
-}
-
 .textarea, .input {
-  font-family: 'JuliusSansOne';
+  font-family: 'Julius Sans One', sans-serif;
   border: 1px solid rgb(131, 111, 1);
   background-color: #444444;
 }
