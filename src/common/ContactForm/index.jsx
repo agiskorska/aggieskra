@@ -35,13 +35,13 @@ function ContactForm() {
       for(let i=0; i <= elements.length-1; i++){
         if(elements[i].type !== 'submit') elements[i].value = ''
       }
-    }, 800)  
+    }, 700)  
+
   };
   return (
     <Container>
       <Card>
 
-      {isSent ? <div>message sent, thank you.</div>: ''}
       <form className={styles.root} onSubmit={sendEmail} ref={form}>
         <div className={styles.left}>
           <Input type='text' name='from_name' defaultValue=''>Name</Input>
@@ -52,7 +52,7 @@ function ContactForm() {
           <Input type='textarea' defaultValue='' name='message'>Your message</Input>
         </div>
         <div className={styles.center}>
-
+          {isSent ? <div className={styles.sent}>message sent, thank you.</div>: ''}
           <Input type='submit' defaultValue='submit'></Input>
         </div>
       </form >

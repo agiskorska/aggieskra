@@ -5,12 +5,16 @@
   align-items: center;
   justify-content: center;
 }
-.textarea, .input {
+.textarea, .input, .submit {
   font-family: 'Julius Sans One', sans-serif;
   border: 1px solid rgb(131, 111, 1);
   background-color: #444444;
   height: 20px;
   border-radius: 10px;
+}
+
+.submit:active{
+  background-color: bisque;
 }
 
 .textarea{
