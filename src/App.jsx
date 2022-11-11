@@ -6,7 +6,7 @@ import {MainLayout} from './Layouts'
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
       <Routes>
         <Route path={'/'} element={<MainLayout/>}>
           <Route index element={<Home />} />
