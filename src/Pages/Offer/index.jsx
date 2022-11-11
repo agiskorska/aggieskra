@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 
-import {Button, Card, CardsContainer, Heading} from '../../common'
+import {ArticleSection, Button, Card, CardsContainer, Container, Heading} from '../../common'
 
 function Offer() {
   const handleMore = () => {
@@ -8,6 +8,12 @@ function Offer() {
   }
   return (
     <>
+      <Container>
+        <ArticleSection>
+          <Heading>What can I do for you?</Heading>
+          <p>I build my websites in Vanilla JS or React. I can also work on a code that has already been written. I am happy to add some features to your WordPress website, if you already have one.<br /> If you require anything more complex, an e-commerce store, contact me for availability, as the waiting time can be extended in busy periods. <br /> If you have a design ready and you are just looking for a developer, please send me the design to the following email address: skorskaga@gmail.com. I will send you a quote within 1 working day.</p>
+        </ArticleSection>
+      </Container>
       <CardsContainer>
         <Card>
           <Heading variant='offer'>Logo Desing</Heading>
