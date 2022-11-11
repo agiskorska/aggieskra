@@ -10,11 +10,11 @@ function Navbar() {
   useEffect(() => {
     const timer1 = setTimeout(()=> {
         setHeight('10vh')
-    }, 1500)
+    }, 2000) // add extra 500ms delay
     const timer = setTimeout(()=> {
       setDirection('row')
       setJustify('flex-start')
-  }, 2700)
+  }, 3200) // add extra 500ms delay
     
   }, [])
 
