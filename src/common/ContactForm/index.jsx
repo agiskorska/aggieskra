@@ -10,10 +10,10 @@ function ContactForm() {
     e.preventDefault()
     const elements = e.currentTarget.elements
     //TODO here validate the elements and send to the mailer
-    console.log('name: ', elements[0])
-    console.log('email: ', elements[1])
-    console.log('phone: ', elements[2])
-    console.log('msg: ', elements[3])
+    console.log(elements[0].name, elements[0].value)
+    console.log(elements[1].name,elements[1].value)
+    console.log(elements[2].name,elements[2].value)
+    console.log(elements[3].name, elements[3].value)
 
     for(let i=0; i <= elements.length-1; i++){
       if(elements[i].type !== 'submit') elements[i].value = ''

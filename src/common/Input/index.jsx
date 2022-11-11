@@ -10,7 +10,7 @@ function Input({type, name, defaultValue, handleClick, children}) {
     <label className={styles.root}><p>{children}</p>
       {type !== 'textarea' ? 
         <input className={defaultValue=='submit' ? styles.submit : styles.input} type={type} value={value} onChange={handleChange} onClick={handleClick} name={name}/> :
-        <textarea className={styles.textarea}></textarea>
+        <textarea className={styles.textarea} name={name}></textarea>
       }
     </label>
   )
