@@ -6,7 +6,7 @@ function Footer() {
     const timer = setTimeout(()=> {
         console.log('changing height')
         setHeight('20vh')
-    }, 1500)
+    }, 2000) // add extra 500ms delay
     
   }, [])
   return (
