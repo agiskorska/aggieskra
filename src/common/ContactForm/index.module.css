@@ -1,4 +1,36 @@
 .root{
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.left, .right{
+  /* outline: 1px solid yellow; */
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
   flex-direction: column;
+}
+@media (min-width: 800px) {
+  .root{
+    /* outline: 1px solid wheat; */
+    width: 60%;
+    margin: auto;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+  .left, .right{
+    /* outline: 1px solid yellow; */
+    flex-basis: 50%;
+  }
+  .right{
+    /* text-align: right; */
+  }
+  .center{
+    flex-basis: 100%;
+    text-align: center;
+  }
 }

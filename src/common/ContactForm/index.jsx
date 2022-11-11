@@ -2,7 +2,7 @@ import {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser';
 
 import styles from './index.module.css'
-import {Container, Input} from '../../common'
+import {Card, Container, Input} from '../../common'
 
 function ContactForm() {
   const [isSent, setIsSent] = useState(false)
@@ -39,14 +39,24 @@ function ContactForm() {
   };
   return (
     <Container>
+      <Card>
+
       {isSent ? <div>message sent, thank you.</div>: ''}
       <form className={styles.root} onSubmit={sendEmail} ref={form}>
-        <Input type='text' name='from_name' defaultValue=''>Name</Input>
-        <Input type='text' name='reply_to' defaultValue=''>Email</Input>
-        <Input type='text' name='phone' defaultValue=''>Phone</Input>
-        <Input type='textarea' defaultValue='' name='message'>Your message</Input>
-        <Input type='submit' defaultValue='submit'></Input>
+        <div className={styles.left}>
+          <Input type='text' name='from_name' defaultValue=''>Name</Input>
+          <Input type='text' name='reply_to' defaultValue=''>Email</Input>
+          <Input type='text' name='phone' defaultValue=''>Phone</Input>
+        </div>
+        <div className={styles.right}>
+          <Input type='textarea' defaultValue='' name='message'>Your message</Input>
+        </div>
+        <div className={styles.center}>
+
+          <Input type='submit' defaultValue='submit'></Input>
+        </div>
       </form >
+      </Card>
     </Container>
   )
 }
