@@ -26,7 +26,7 @@ function Home() {
           <div className={styles.cardRight}>
             <Heading>4.</Heading>
             <Heading variant='gold'>Deployment</Heading>
-            <p>Now it's the gran opening! Your site will be live soon! I will get the domain we discussed initially and make it your website! Now if you type in your address, you'll see what I made for you!</p>
+            <p>Now it's the time for grand opening! Your site will be live soon! I will get the domain we discussed initially and make it your website! Now if you type in your address, you'll see what I made for you!</p>
           </div>
         </div>
       </CardsContainer>
