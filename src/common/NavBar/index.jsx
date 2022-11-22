@@ -9,7 +9,7 @@ function Navbar() {
   const [justify, setJustify] = useState('flex-end')
   useEffect(() => {
     const timer1 = setTimeout(()=> {
-        setHeight('10vh')
+        setHeight('80px')
     }, 2000) // add extra 500ms delay
     const timer = setTimeout(()=> {
       setOpacity(0)

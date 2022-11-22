@@ -4,8 +4,7 @@ function Footer() {
   const [height, setHeight] = useState('56vh')
   useEffect(() => {
     const timer = setTimeout(()=> {
-        console.log('changing height')
-        setHeight('20vh')
+        setHeight('150px')
     }, 2000) // add extra 500ms delay
     
   }, [])
