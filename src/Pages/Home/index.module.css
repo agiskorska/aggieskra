@@ -23,24 +23,34 @@
 
 @media (min-width: 800px){
   .tiles{
-    background-image: url('../../assets/zigzag.png');
+    background-image: url('../../assets/zigzagstretched.png'); 
+
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 500px;
+    background-position: 50% 400px;
 
   }
   
   .cardLeft, .cardRight{
-    width: 50%;
+    width: 80%;
   }
 
   .cardRight{
     margin-left: 50%;
   }
 }
-
+@media (min-width: 1200px) {
+  .tiles{
+    background-image: url('../../assets/zigzag.png');
+    background-position: 50% 150px;
+  }
+}
 @media (min-width: 1400px) {
   .tiles{
     background-position: 50% 300px;
+  }
+
+  .cardLeft, .cardRight{
+    width: 50%;
   }
 }
