@@ -1,18 +1,16 @@
 .tiles {
   display: flex;
   flex-direction: column;
-  background-image: url('../../assets/zigzag.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 150px;
+
 }
 
 .cardLeft, .cardRight{
+  margin-top: 20px;
   padding: 10px;
   border-radius: 30px;
   background-color: rgba(39, 39, 38, 0.84);
   position: relative;
-  width: 50%
+
 }
 /* 
 .borderLeft{
@@ -23,6 +21,20 @@
   border-right: 5px solid gold;
 } */
 
-.cardRight{
-  margin-left: 50%;
+
+@media (min-width: 800px){
+  .tiles{
+    background-image: url('../../assets/zigzag.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 150px;
+  }
+  
+  .cardLeft, .cardRight{
+    width: 50%;
+  }
+
+  .cardRight{
+    margin-left: 50%;
+  }
 }
