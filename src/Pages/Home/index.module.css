@@ -1,0 +1,24 @@
+.tiles {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLeft, .cardRight{
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(245, 245, 220, 0.027);
+  position: relative;
+  width: 50%
+}
+/* 
+.borderLeft{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  border-right: 5px solid gold;
+} */
+
+.cardRight{
+  margin-left: 50%;
+}

@@ -11,6 +11,13 @@
   height: 50px;
 }
 
+.gold{
+  width: fit-content;
+  margin: auto;
+  color: #C9A401;
+  box-shadow: 10px #7C5D00;
+}
+
 @media (min-width: 500px){
   .offer{
     font-size: 30px;
