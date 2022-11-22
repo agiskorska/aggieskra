@@ -21,13 +21,13 @@
   border-right: 5px solid gold;
 } */
 
-
 @media (min-width: 800px){
   .tiles{
     background-image: url('../../assets/zigzag.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 150px;
+    background-position: 50% 500px;
+
   }
   
   .cardLeft, .cardRight{
@@ -36,5 +36,11 @@
 
   .cardRight{
     margin-left: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .tiles{
+    background-position: 50% 300px;
   }
 }
