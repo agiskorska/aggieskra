@@ -1,7 +1,37 @@
-import { Card, CardsContainer, Heading} from '../../common';
+import {useState} from 'react'
+
+import { Button, CardsContainer, Carousel, Heading} from '../../common'
 import styles from './index.module.css'
 
+const testimonials = [
+  <p className={styles.testimonialText}>
+    Aggie knew exactly what to do. We have had very little idea about websites but she explained everything, made it look really slick! I'd recommend Aggie every time.
+    <br /><em className={styles.em}>~ Frank, Aylesbury</em>
+  </p>,
+  <p className={styles.testimonialText}>
+    Testimonial blablabla Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, distinctio.
+    <br /><em className={styles.em}>~ Bob, Marlow</em>
+  </p>,
+  <p className={styles.testimonialText}>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae esse, blanditiis dolores dolor a facilis provident, ipsum maxime quisquam qui cum beatae in laudantium voluptatum modi aut? Sapiente, facere beatae.
+    <br /><em className={styles.em}>~ Sue, Heathrow</em>
+  </p>,
+
+]
+
 function Home() {
+  const [isCopied, setIsCopied] = useState(false)
+  const handleClick = e =>{
+    e.preventDefault()
+    console.log(e.target.textContent)
+    e.target.textContent = '07598 397 503'
+    navigator.clipboard.writeText('07598397503')
+    setIsCopied(true)
+    setTimeout(() => {
+      e.target.textContent = 'Call me!'
+      setIsCopied(false)
+    }, 3000)
+  }
   return (
     <div>
       <CardsContainer>
@@ -30,6 +60,18 @@ function Home() {
           </div>
         </div>
       </CardsContainer>
+      <section className={styles.testimonials}>
+        <Heading>What my clients say about me:</Heading>
+        <Carousel slides={testimonials} timer={3000} arrows={false}></Carousel>
+      </section>
+      <section className={styles.contact}>
+        <Heading>Contact me now!</Heading>
+        <p>
+          Did you make up your mind? Or are you still confused about what you need? Regardless, give me a call, I may have some good advice.
+        </p>
+          <Button handleClick={handleClick} variant='light' text='Call Me'></Button>
+          {isCopied && <div className={styles.copied}>Number copied to your clipboard!</div>}
+      </section>
     </div>
   )
 }
