@@ -1,14 +1,20 @@
 import {useEffect, useState} from 'react'
 import styles from './index.module.css'
 function Footer() {
-  const [height, setHeight] = useState('56vh')
+  const [height, setHeight] = useState('50vh')
   const [opacity, setOpacity] = useState(0)
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
   useEffect(() => {
     const timer = setTimeout(()=> {
-        setHeight('150px')
+        setHeight(`${windowSize.innerHeight*0.21}px`)
         setTimeout(()=> {setOpacity(1)}, 1500)
     }, 2000) // add extra 500ms delay
-    
+    console.log()
   }, [])
   return (
     <footer className={styles.root} style={{height: height, transition: 'all 1.5s'}}>
