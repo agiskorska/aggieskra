@@ -33,11 +33,11 @@
 }
 
 .logoLeft{
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .titleLeft{
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .logosLeft{
@@ -49,6 +49,12 @@
   font-size: 35px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
+  .logoLeft{
+    margin-right: 20px;
+  }
   
+  .titleLeft{
+    font-size: 40px;
+  }
 }
