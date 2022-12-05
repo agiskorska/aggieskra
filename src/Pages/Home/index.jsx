@@ -69,8 +69,8 @@ function Home() {
         <p>
           Is it all a bit more clear? Or are you still confused about what you need? Regardless, give me a call, I may have some good advice.
         </p>
-          <Button handleClick={handleClick} variant='light' text='Call Me'></Button>
           {isCopied && <div className={styles.copied}>Number copied to your clipboard!</div>}
+          <Button handleClick={handleClick} variant='light' text='Call Me'></Button>
       </section>
     </div>
   )

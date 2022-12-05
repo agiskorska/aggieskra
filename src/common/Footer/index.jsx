@@ -11,7 +11,11 @@ function Footer() {
   }
   useEffect(() => {
     const timer = setTimeout(()=> {
+      if (windowSize.innerWidth > 900){
+        setHeight('150px')
+      } else {
         setHeight(`${windowSize.innerHeight*0.21}px`)
+      }
         setTimeout(()=> {setOpacity(1)}, 1500)
     }, 2000) // add extra 500ms delay
     console.log()
