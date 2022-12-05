@@ -8,8 +8,10 @@ function About() {
       <ArticleSection>
         <Heading>About me</Heading>
         <p>Passionate about development, self-driven, ambitious developer collaborating with a team of like minded people with aspiration to make the World Wide Web more accessible to all.</p>
-        <Heading>My journey to coding</Heading>
-        <p>Before I started coding, I was a maths teacher. </p>
+        <Heading>What you can expect</Heading>
+        <p>I have strong skills in web development and I am constantly improving my knowledge about design and User Experience (UX). I know how important the fist impression can be and how much a business relies on it, so I will make sure your website is unique, easy to use and memorable. These features can give you an advantage over your competition.</p>
+        <p>These days many businesses have outdated websites. Your client opens your website (most likely on their phone) and if they find it difficult to use, they're going to go back to their Google search and get the next link that would most likely be your competition. </p>
+        <p>I use mobile-first approach, which means I am building my websites so that they are good looking on phones first, only then do I check how they present on a desktop. This is the most recent approach to website development. If you would like to learn more about that, don't hesitate to drop me an email.</p>
         <Heading>My work</Heading>
         <div className={styles.links}>
           <p><a href='https://chippenhampride.com'>Chippenham Pride website</a></p>

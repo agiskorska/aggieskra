@@ -1,7 +1,13 @@
 .root{
-  width: 60%;
+  width: 80%;
   margin:auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media (min-width: 700px) {
+  .root{
+    width: 60%;
+  }
 }
