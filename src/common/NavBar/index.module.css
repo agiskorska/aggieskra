@@ -38,6 +38,7 @@
 
 .titleLeft{
   font-size: 30px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .logosLeft{
@@ -47,6 +48,7 @@
 .title {
   padding: 20px;
   font-size: 35px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 @media (min-width: 500px) {

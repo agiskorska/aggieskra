@@ -8,8 +8,11 @@ function About() {
       <ArticleSection>
         <Heading>About me</Heading>
         <p>Passionate about development, self-driven, ambitious developer collaborating with a team of like minded people with aspiration to make the World Wide Web more accessible to all.</p>
+        <Heading>My journey to coding</Heading>
+        <p>Before I started coding, I was a maths teacher. </p>
         <Heading>My work</Heading>
         <div className={styles.links}>
+          <p><a href='https://chippenhampride.com'>Chippenham Pride website</a></p>
           <p><a href='https://chippenhampride.com'>Chippenham Pride website</a></p>
           <p><a href='https://github.com/agiskorska'>My github</a></p>
           {/* <p><a href='https://chippenhampride.com'>Chippenham Pride website</a></p> */}

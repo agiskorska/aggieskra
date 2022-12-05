@@ -9,11 +9,11 @@ const testimonials = [
     <br /><em className={styles.em}>~ Frank, Aylesbury</em>
   </p>,
   <p className={styles.testimonialText}>
-    Testimonial blablabla Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, distinctio.
+    I wanted my site to be accessible. It met all the requirements for the accessible website that my clients can enjoy.
     <br /><em className={styles.em}>~ Bob, Marlow</em>
   </p>,
   <p className={styles.testimonialText}>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae esse, blanditiis dolores dolor a facilis provident, ipsum maxime quisquam qui cum beatae in laudantium voluptatum modi aut? Sapiente, facere beatae.
+    Aggie did a quick and good job. She understood exactly what I needed and was patient with all my corrections.
     <br /><em className={styles.em}>~ Sue, Heathrow</em>
   </p>,
 
