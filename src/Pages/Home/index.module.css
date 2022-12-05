@@ -13,6 +13,16 @@
 
 }
 
+
+.smallImg{
+  /* position: absolute; */
+  width: 90%;
+  
+  margin: auto;
+  height: 50px;
+  background-image: url('../../assets/smallImg.png');
+}
+
 .testimonials{
   width: 100%;
   height: 500px;
