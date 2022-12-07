@@ -1,14 +1,14 @@
 .tiles {
   display: flex;
   flex-direction: column;
-
+  width: 100%;
 }
 
 .cardLeft, .cardRight{
   margin-top: 20px;
   padding: 10px;
   border-radius: 30px;
-  background-color: rgba(39, 39, 38, 0.84);
+  background-color: #362f2ff7;
   position: relative;
 
 }
@@ -32,34 +32,40 @@
 
 @media (min-width: 800px){
   .tiles{
+    width: 80%;
     background-image: url('../../assets/zigzagstretched.png'); 
-
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 400px;
+    background-position: 15% 300px;
 
   }
-  
   .cardLeft, .cardRight{
-    width: 80%;
+    width: 300px;
   }
 
   .cardRight{
-    margin-left: 50%;
+    margin-left: calc(95% - 300px)
   }
+  .cardLeft{
+    margin-left: 5%;
+  }
+
 }
 @media (min-width: 1200px) {
+
   .tiles{
     background-image: url('../../assets/zigzag.png');
-    background-position: 50% 150px;
+    background-position: -150px 150px;
+  }
+
+  .cardLeft, .cardRight{
+    width: 400px;
   }
 }
 @media (min-width: 1400px) {
   .tiles{
     background-position: 50% 300px;
-  }
-
-  .cardLeft, .cardRight{
-    width: 50%;
+    width: 900px;
+    margin: auto;
   }
 }

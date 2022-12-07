@@ -34,8 +34,8 @@ function Home() {
   }
   return (
     <div>
+      <Heading>Our journey to your big launch!</Heading>
       <CardsContainer>
-        <Heading>Our journey to your big launch!</Heading>
         <div className={styles.tiles}>
           <div className={styles.cardLeft}>
             <div className={styles.borderLeft}></div>
